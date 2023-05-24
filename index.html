@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Decodificador de Texto</title>
+    </head>  
+    <body>
+        <header>
+            <div class="box">
+                <a href="https://www.alura.com.br/"><img src="./src/Vector.svg" id="logo-branca" alt="Logo da Alura"></a>
+            </div>
+        </header>
+        <main>
+            <section class="entrada_de_texto">
+                <div class="recebe-texto">
+                    <form>
+                        <textarea class="entrada" cols="35" rows="8" placeholder="Digite seu texto..."></textarea>
+                    </form>
+                </div>
+                <div class="chaves-decodificacao">
+                    <div class="aviso-restricao">
+                        <img id="exclamacao" src="" alt="@">
+                        <p id="texto-aviso">Apenas letras minúsculas e sem acento.</p>
+                    </div>
+                    <div class="botoes">
+                        <div id="caixa-botoes-CD">
+                            <button id="criptografar">Criptografar</button>
+                        </div>
+                        <div id="caixa-botoes-CD">
+                            <button id="descriptografar">Descriptografar</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="saida-de-texto">
+                <div id="modo-sem-texto">
+                    <img id="menino-lupa" src="./src/High quality products 1 1.svg" alt="Garoto observando um diamante com uma lupa">
+                    <p id="nenhuma-mensagem">Nenhuma mensagem encontrada</p>
+                    <p id="digite-um-texto">Digite um texto que você deseja criptografar ou descriptografar</p>
+                </div>
+                <div id="modo-texto-codificado">
+                    <p id="texto_final"></p>
+                    <div id="caixa-botao-copiar">
+                        <button id="copiar">Copiar</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+
+        
+        <footer>
+            <p>&copy; Desenvolvido por João Pedro Silva</p>
+        </footer>
+
+        <script src="./js/decoder.js"></script>
+        
+    </body>  
+</html>
