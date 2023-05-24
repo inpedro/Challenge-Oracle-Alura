@@ -9,7 +9,6 @@ let finalText = document.querySelector('#texto_final');
 let buttonCopiar = document.querySelector('#copiar');
 //let buttonTema = document.querySelector('.botao-tema-DN');
 
-
 function testArray (text) {
     return text.replace(/\s/g,'').length;
 }
@@ -60,7 +59,6 @@ function criptografar() {
 function descriptografar() {
 
     let tamanho = testArray(textarea.value);
-
     if (tamanho != 0) {
 
         let novoTexto = textarea.value.normalize('NFD').replace(/[\u0300-\u036f]/g, "");
@@ -75,19 +73,14 @@ function descriptografar() {
 
         document.getElementById('modo-texto-codificado').style.display = "inline-block";
         document.getElementById('modo-sem-texto').style.display = 'none';
-
     }
 }
-
 
 function copiarTexto() {
     const textcopy = finalText.innerHTML;  
     navigator.clipboard.writeText(textcopy);
 }
 
-
 buttonCripto.onclick = criptografar;
 buttonDescri.onclick = descriptografar;
 buttonCopiar.onclick = copiarTexto;
-
-
